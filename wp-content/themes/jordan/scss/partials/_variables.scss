@@ -1,0 +1,18 @@
+// Primary Colors === */
+$black:		#181818;
+$black2:	#252525;
+$black3:	#323232;
+$white:		#FFFFFF;
+$red:		#FF1940;
+$gold:		#98A68A;
+$offwhite:	#EFEFEF;
+$lightgrey:	#D4D4D4;
+$blue:		#19FFD8;
+
+// Secondar Colors === */
+
+
+// Fonts === */
+@mixin exo-light{font-family:"Exo",sans-serif;font-style:normal;font-weight:400;}
+@mixin exo-italic{font-family:"Exo",sans-serif;font-style:italic;font-weight:400;}
+@mixin exo-bold{font-family:"Exo",sans-serif;font-style:normal;font-weight:800;}

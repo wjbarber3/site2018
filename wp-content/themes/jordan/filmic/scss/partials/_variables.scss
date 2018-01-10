@@ -1,0 +1,18 @@
+// Primary Colors === */
+$black:		#181818;
+$black2:	#252525;
+$black3:	#323232;
+$white:		#FFFFFF;
+$red:		#FF1940;
+$gold:		#98A68A;
+$offwhite:	#EFEFEF;
+$lightgrey:	#D4D4D4;
+
+// Secondar Colors === */
+
+
+// Fonts === */
+@mixin nun-light{font-family:"nunito",sans-serif;font-style:normal;font-weight:200;}
+@mixin nun-light-it{font-family:"nunito",sans-serif;font-style:italic;font-weight:200;}
+@mixin nun-bold{font-family:"nunito",sans-serif;font-style:normal;font-weight:900;}
+@mixin nun-bold-it{font-family:"nunito",sans-serif;font-style:italic;font-weight:900;}

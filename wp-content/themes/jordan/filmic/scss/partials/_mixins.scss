@@ -1,0 +1,48 @@
+@mixin vert-align($perc, $perc2){
+  position: relative;
+  top: $perc;
+  @include transform(translateY($perc2));
+}
+
+// breakpoints r us
+
+@mixin bp($point) {
+  $bp-sm-mobile: "(max-width: 485px)";
+  $bp-mobile: "(max-width: 767px)";
+  $bp-md-tablet: "(max-width: 768px)";
+  $bp-sm-tablet: "(max-width: 968px)";
+  $bp-tablet: "(max-width: 1024px)";
+  $bp-medium: "(max-width: 1150px)";
+  $bp-large: "(max-width: 1300px)";
+  $bp-xlarge: "(max-width: 1599px)";
+  $bp-huge: "(min-width: 1600px)";
+
+  @if $point == sm-mobile {
+    @media #{$bp-sm-mobile} { @content; }
+  }
+  @if $point == mobile {
+    @media #{$bp-mobile}  { @content; }
+  } 
+  @else if $point == sm-tablet {
+    @media #{$bp-sm-tablet} { @content; }
+  }
+   @else if $point == md-tablet {
+    @media #{$bp-md-tablet} { @content; }
+  }
+  @else if $point == tablet {
+    @media #{$bp-tablet} { @content; }
+  }
+  @else if $point == medium {
+    @media #{$bp-medium} { @content; }
+  }
+  @else if $point == large {
+    @media #{$bp-large} { @content; }
+  }
+  @else if $point == xlarge {
+    @media #{$bp-xlarge} { @content; }
+  } 
+  @else if $point == huge {
+    @media #{$bp-huge} { @content; }
+  }
+
+}

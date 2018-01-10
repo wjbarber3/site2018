@@ -1,0 +1,37 @@
+/* ==================== */
+/* === NOTIFICATION === */
+/* ==================== */
+
+.notification{width:100%;height:75px;padding:20px 0;background-color:$black2;
+	p{color:$white;}
+}
+
+/* ==================== */
+/* === FILM CARD === */
+/* ==================== */
+
+.film-card{height:auto;margin-bottom:20px;
+	.film-heading{background-color:$black3;padding:10px;border-bottom:3px solid $lightgrey;position:relative;
+		h1{color:$white;}
+	}
+	.film-info{padding:10px;background-color:$white;min-height:235px;}
+	.film-link{width:33px;height:23.5px;position:absolute;background-image:url('../img/film-link.png');background-size:cover;right:10px;bottom:-11px;
+		&:hover{opacity:.9;}
+	}
+	.film-poster{width:100px;margin-right:15px;width:40%;display:inline-block;}
+	.film-details{display:inline-block;vertical-align:top;width:55%;
+		h2{font-size:15px;font-weight:200;
+			&.actor{display:inline;line-height:20px;
+				&::after{content:", ";}
+				&:last-of-type::after{content:"";}
+			}
+		}
+		span h2{font-weight:900;line-height:18px;margin-top:9px;}
+	}
+	.sep{height:1px;width:135px;background:$red;margin-bottom:6px;margin-top:4px;}
+	.film-year{margin-top:10px;
+		h2,h4{display:inline;}
+		h4{@include nun-light-it;font-size:14px;}
+	}
+}
+

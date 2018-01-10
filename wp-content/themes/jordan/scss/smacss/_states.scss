@@ -1,0 +1,136 @@
+/* ================== */
+/* === BASE ========= */
+/* ================== */
+
+@include bp(mobile) {
+	h1.large{font-size:42px;line-height:42px;}
+	h2{font-size:28px;line-height:38px;}
+	h3{font-size:16px;line-height:26px;}
+	.mobile-only{display:block;}
+	.mobile-hide{display:none;}
+	.secondary-btn{width:100%;text-align:center;}
+}
+
+/* ================== */
+/* === WORK ========= */
+/* ================== */
+
+#case-study-container{
+	@include bp(mobile){padding:60px 20px;
+		.case-study{padding:5px 5px 15px;
+			.case-overlay{top:initial;@include transform(none);
+				h3{opacity:1;}
+			}
+		}
+	}
+}
+
+/* ================== */
+/* === HEADER ======= */
+/* ================== */
+
+header {
+	@include bp(mobile) {
+		nav{display:none;}
+		.mobile-trigger{display:inline-block;color:$white;font-size:18px;text-transform:uppercase;}
+	}
+}
+
+/* ================== */
+/* === FEATURED ===== */
+/* ================== */
+
+#featured {
+	@include bp(mobile){padding:60px 0;height:auto;
+		.main-wrap{top:initial;@include transform(none);}
+		.description{padding-left:initial;margin-top:30px;opacity:1;
+			h2:last-of-type{font-size:24px;line-height:34px;}
+		}
+		.image-container img{position:relative;right:0;}
+	}
+}
+
+/* ================== */
+/* === OPENING ====== */
+/* ================== */
+
+.opening{
+	@include bp(mobile){
+		.headline{top:44%;width:90%;
+			h1{margin-bottom:4px;}
+			a{font-size:16px;margin-right:20px;}
+		}
+		.social{display:none;}
+		.big-logo-container{opacity:.3;}
+		.companies{display:none;}
+	}
+}
+
+/* ================== */
+/* === ABOUT ======== */
+/* ================== */
+
+#about {
+	@include bp(mobile) {
+		.description, .quotes{width:100%;height:auto;}
+		.description{padding:40px 0;margin-top:0px;height:auto;
+			.box{max-width:85%;right:0;left:0;margin:auto;top:initial;opacity:1;position:relative;@include transform(none);}
+			svg{margin:0 20px 20px 0;}
+		}
+		.quotes {margin-top:0px;padding-bottom:40px;
+			.quote{left:0;max-width:85%;right:0;margin:auto;position:relative;top:initial;@include transform(none);margin-top:40px;
+				span{width:100%;}
+			}
+			.name-controls{display:none;}
+			&:before{width:50px;height:41px;left:14px;top:112px;}
+		}
+	}
+}
+
+/* ================== */
+/* === CONTACT ====== */
+/* ================== */
+
+#contact {
+	@include bp(mobile) {height:auto;padding:60px 0;
+		.main-wrap{top:initial;@include transform(none);}
+		.gform_wrapper .gfield_date_dropdown_month{width:100%;}
+	}
+}
+
+/* ================== */
+/* === HERO ========= */
+/* ================== */
+
+.hero{
+	@include bp(mobile) {height:250px;
+		h1{max-width:100%;}
+		.project-details{width:100%;
+			p{font-size:12px;
+				&.date{display:none;}
+			}
+		}
+		.hero-overlay{max-width:100%;top:55%;}
+		h3{display:none;}
+	}
+}
+
+/* ========================== */
+/* === CASE STUDIES ========= */
+/* ========================== */
+
+.single-case-study{
+	@include bp(mobile){
+		.mockup{width:100%;margin-top:0px;position:relative;padding:30px;}
+		.case-study-info{width:100%;
+			.brief{background-image:none !important;padding:40px 30px;}
+			.case-study-tech-tools{padding-left:30px;padding-right:30px;}
+			.case-study-tech-tools li{width:100%;}
+			.next-project{
+				h4{left:30px;}
+				.next-container{padding:60px 30px 46px;}
+			}
+		}
+		.case-uk .hero h1.large{font-size:42px;line-height:42px;}
+	}
+}

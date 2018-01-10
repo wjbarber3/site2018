@@ -1,0 +1,169 @@
+{
+  "Directors" : [ "Alfred Hitchcock", "Francois Truffaut", "Jean-Luc Godard" ],
+  "Films" : {
+    "Alfred Hitchcock" : [ {
+      "Actors" : [ "James Stewart", "Grace Kelly", "Raymond Burr" ],
+      "Title" : "Rear Window",
+      "Writer" : [ "John Michael Hayes (screenplay)", "Cornell Woolrich (short story)" ],
+      "Year" : "1954",
+      "id" : "tt0047396"
+    }, {
+      "Actors" : [ "James Stewart", "Kim Novak" ],
+      "Title" : "Vertigo",
+      "Writer" : [ "Alec Coppel (screenplay)", "Samuel A. Taylor (screenplay)" ],
+      "Year" : "1958",
+      "id" : "tt0047396"
+    }, {
+      "Actors" : [ "Nita Naldi", "Malcolm Keen", "John F. Hamilton", "Bernhard Goetzke" ],
+      "Title" : "The Mountain Eagle",
+      "Writer" : [ "Max Ferner", "Charles Lapworth (story)" ],
+      "Year" : "1926",
+      "id" : "tt0047396"
+    }, {
+      "Actors" : [ "Marie Ault", "June Tripp", "Ivor Novello" ],
+      "Title" : "The Lodger",
+      "Writer" : [ "Marie Belloc Lowndes (novel)", "Eliot Stannard (scenario)" ],
+      "Year" : "1927",
+      "id" : "tt0047396"
+    }, {
+      "Actors" : [ "Carl Brisson", "Lillian Hall-Davis", "Ian Hunter" ],
+      "Title" : "The Ring",
+      "Writer" : [ "Alred Hitchcock" ],
+      "Year" : "1927",
+      "id" : "tt0047396"
+    }, {
+      "Actors" : [ "Ivor Novello", "Ben Webster", "Norman McKinnel" ],
+      "Title" : "When Boys Leave Home",
+      "Writer" : [ "Constance Collier", "Ivor Novello" ],
+      "Year" : "1927",
+      "id" : "tt0047396"
+    } ],
+    "Francois Truffaut" : [ {
+      "Actors" : [ "Jean-Pierre Leaud", "Albert Remy", "Claire Maurier" ],
+      "Title" : "The 400 Blows",
+      "Writer" : [ "Francois Truffaut (scenario)", "Marcel Moussy (adaptation)" ],
+      "Year" : "1959",
+      "id" : "tt0053198"
+    }, {
+      "Actors" : [ "Charles Aznavour", "Marie Dubois", "Nicole Berger" ],
+      "Title" : "Shoot The Piano Player",
+      "Writer" : [ "David Goodis (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1960",
+      "id" : "tt0054389"
+    }, {
+      "Actors" : [ "Jeanne Moreau", "Oskar Werner", "Henri Serre" ],
+      "Title" : "Jules and Jim",
+      "Writer" : [ "Henri-Pierre Roche (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1962",
+      "id" : "tt0055032"
+    }, {
+      "Actors" : [ "Jean Desailly", "Francoise Dorleac", "Nelly Benedetti" ],
+      "Title" : "The Soft Skin",
+      "Writer" : [ "Francois Truffaut", "Jean-Louis Richard" ],
+      "Year" : "1964",
+      "id" : "tt0058458"
+    }, {
+      "Actors" : [ "Oskar Werner", "Julie Christie", "Cyril Cusack" ],
+      "Title" : "Farenheit 451",
+      "Writer" : [ "Francois Truffaut (scenario)", "Ray Bradbury (novel)" ],
+      "Year" : "1966",
+      "id" : "tt0060390"
+    }, {
+      "Actors" : [ "Jeanne Moreau", "Jean-Claude Brialy", "Michel Bouquet" ],
+      "Title" : "The Bride Wore Black",
+      "Writer" : [ "Cornell Woolrich (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1968",
+      "id" : "tt0061955"
+    }, {
+      "Actors" : [ "Jean-Pierre Leaud", "Claude Jade", "Delphine Seyrig" ],
+      "Title" : "Stolen Kisses",
+      "Writer" : [ "Francois Truffaut (scenario)", "Claude de Givray (scenario and dialogue)" ],
+      "Year" : "1968",
+      "id" : "tt0062695"
+    }, {
+      "Actors" : [ "Catherine Deneuve", "Jean-Paul Belmondo", "Nelly Borgeaud" ],
+      "Title" : "Mississippi Mermaid",
+      "Writer" : [ "Cornell Woolrich (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1969",
+      "id" : "tt0064990"
+    }, {
+      "Actors" : [ "Francois Truffaut", "Jean-Pierre Cargol", "Francoise Seigner" ],
+      "Title" : "The Wild Child",
+      "Writer" : [ "Francois Truffaut (adaptation)", "Jean Itard (memoir)" ],
+      "Year" : "1970",
+      "id" : "tt0064285"
+    }, {
+      "Actors" : [ "Jean-Pierre Leaud", "Claude Jade", "Hiroko Berghauer" ],
+      "Title" : "Bed and Board",
+      "Writer" : [ "Francois Truffaut", "Claude de Givray" ],
+      "Year" : "1970",
+      "id" : "tt0065651"
+    }, {
+      "Actors" : [ "Jean-Pierre Leaud", "Kika Markham", "Stacey Tendeter" ],
+      "Title" : "Two English Girls",
+      "Writer" : [ "Henri-Pierre Roche (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1971",
+      "id" : "tt0066989"
+    }, {
+      "Actors" : [ "Bernadette Lafont", "Claude Brasseur", "Charles Denner" ],
+      "Title" : "A Gorgeous Girl Like Me",
+      "Writer" : [ "Henry Farrell (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1972",
+      "id" : "tt0069442"
+    }, {
+      "Actors" : [ "Jacqueline Bisset", "Jean-Pierre Leaud", "Francois Truffaut" ],
+      "Title" : "Day For Night",
+      "Writer" : [ "Francois Truffaut (screenplay)", "Jean-Louis Richard (screenplay)" ],
+      "Year" : "1973",
+      "id" : "tt0070460"
+    }, {
+      "Actors" : [ "Isabelle Adjani", "Bruce Robinson", "Sylvia Marriott" ],
+      "Title" : "The Story of Adele H",
+      "Writer" : [ "Francois Truffaut (screenplay)", "Jean Gruault (screenplay)" ],
+      "Year" : "1975",
+      "id" : "tt0073114"
+    }, {
+      "Actors" : [ "Georges Desmouceaux", "Philippe Goldmann", "Nicole Felix" ],
+      "Title" : "Small Change",
+      "Writer" : [ "Francois Truffaut (original scenario)", "Suzanne Schiffman (original scenario)" ],
+      "Year" : "1976",
+      "id" : "tt0074152"
+    }, {
+      "Actors" : [ "Charles Denner", "Brigitte Fossey", "Nelly Borgeaud" ],
+      "Title" : "The Man Who Loved Women",
+      "Writer" : [ "Michel Fermaud", "Suzanne Schiffman" ],
+      "Year" : "1977",
+      "id" : "tt0076155"
+    }, {
+      "Actors" : [ "Francois Truffaut", "Nathalie Baye", "Jean Daste" ],
+      "Title" : "The Green Room",
+      "Writer" : [ "Jean Gruault (screenplay)", "Henry James (novel)" ],
+      "Year" : "1978",
+      "id" : "tt0077315"
+    }, {
+      "Actors" : [ "Jean-Pierre Leaud", "Claude Jade", "Marie-France Pisier" ],
+      "Title" : "Love On The Run",
+      "Writer" : [ "Francois Truffaut (scenario)", "Marie-France Pisier (scenario)" ],
+      "Year" : "1979",
+      "id" : "tt0078771"
+    }, {
+      "Actors" : [ "Catherine Deneuve", "Gerard Depardieu", "Jean Poiret" ],
+      "Title" : "The Last Metro",
+      "Writer" : [ "Francois Truffaut (scenario)", "Suzanne Schiffman (scenario)" ],
+      "Year" : "1980",
+      "id" : "tt0080610"
+    }, {
+      "Actors" : [ "Gerard Depardieu", "Fanny Ardant", "Henri Garcin" ],
+      "Title" : "The Woman Next Door",
+      "Writer" : [ "Francois Truffaut (scenario)", "Suzanne Schiffman (scenario)" ],
+      "Year" : "1981",
+      "id" : "tt0082370"
+    }, {
+      "Actors" : [ "Fanny Ardant", "Jean-Louis Trintignant", "Jean-Pierre Kalfon" ],
+      "Title" : "Confidentially Yours",
+      "Writer" : [ "Charles Williams (novel)", "Francois Truffaut (adaptation)" ],
+      "Year" : "1983",
+      "id" : "tt0086551"
+    } ]
+  }
+}

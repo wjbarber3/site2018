@@ -1,0 +1,66 @@
+/* ================== */
+/* === HEADER ======= */
+/* ================== */
+
+/* ================== */
+/* === FOOTER ======= */
+/* ================== */
+
+/* =========================== */
+/* === FILMIC SPECIFIC ======= */
+/* =========================== */
+
+.filmic-page{display:none;height:calc(100vh - 75px);width:100vw;
+	&.active{display:block;}
+	.filmic-sidebar{width:220px;background-color:$black3;height:100%;float:left;display:inline-block;padding:40px 30px;overflow:scroll;
+		h2{color:$white;margin-bottom:5px;font-size:20px;}
+		.back{font-weight:900;display:block;font-size:13px;margin-bottom:30px;
+			i{margin-right:4px;}
+		}
+		label{color:$white;font-size:16px;font-weight:900;
+			i{color:$gold;margin-right:8px;}
+		}
+		input[type="text"], input[type="submit"], select{width:100%;margin-top:4px;height:30px;-webkit-appearance:none;border-radius:0;color:$white;padding:10px;
+			&:focus{border:1px solid $red;-webkit-appearance:none;}
+		}
+		input[type="text"]{border:1px solid $white;background-color:transparent;outline:none;}
+		input[type="submit"]{color:$white;@include nun-bold;background-color:$red;border:0;outline:none;cursor:pointer;padding:0;
+			&:hover{background-color:$white;color:$black;}
+			&.secondary{background:transparent;border:1px solid $white;margin-top:20px;
+				&:hover{color:$black;background-color:$white;}
+			}
+		}
+		input[type="checkbox"]{display:none;}
+		#actor-search{
+			#actor-input:focus+#actor-container{}
+			#actor-container{padding:15px;border:1px solid $white;height:145px;overflow:scroll;margin-top:4px;
+				label{display:block;margin-bottom:8px;cursor:pointer;font-size:12px;
+					&:hover{color:$red;}
+				}
+			}
+			input:checked+label{
+				color:$gold;
+				&::after{content:"\f00c";color:$red;font-family:FontAwesome;font-style:normal;font-weight:normal;margin-left:4px;}
+			}
+		}
+		select{background:url('../img/select-arrow.png') no-repeat;background-size:10px 6.5px;background-position:94% 50%;padding:0 10px;}
+		option{color:$white;}
+		::-webkit-input-placeholder {color: $white;}
+		::-moz-placeholder {color: $white;}
+		:-ms-input-placeholder {color: $white;}
+		:-moz-placeholder {color: $white;}
+		img{width:100%;height:auto;margin:25px 0;}
+	}
+	.filmic-content{width:calc(100% - 220px);float:left;display:inline-block;background-color:$offwhite;height:100%;}
+	.filmic-heading{width:100%;background-color:$white;padding:30px;height:104px;position:relative;
+		a{text-decoration:underline;@include nun-bold-it;
+			&:hover{color:$black;}
+		}
+		sup{font-size:18px;margin-left:10px;}
+	}
+	#loader{height:4px;background:$red;position:absolute;bottom:0;left:0;animation:expand-loader .5s ease-in-out;}
+	.filmic-data{padding:20px 6px;height:calc(100vh - 179px);overflow:scroll;}
+	#director-list a{display:block;width:100%;border:1px solid $black;padding:20px;font-size:16px;color:$black;font-weight:900;text-align:center;
+		&:hover{background-color:$black;color:$white;}
+	}
+}

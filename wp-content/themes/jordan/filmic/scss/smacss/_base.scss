@@ -1,0 +1,51 @@
+/* ================== */
+/* === TYPOGRAPHY === */
+/* ================== */
+
+h1,h2,h3,h4,p,a,li,input,label{font-family: 'Nunito', sans-serif;color:$black;}
+h1{font-weight:900;color:$red;}
+h1.large{font-size:72px;font-weight:900;line-height:42px;}
+h2{font-size:16px;line-height:24px;font-weight:900;}
+h3{font-size:12px;line-height:18px;font-weight:900;}
+p,li{font-size:12px;line-height:16px;font-weight:200;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;transition:all .2s ease-in-out;color:$red;
+	&:hover{color:$white;text-decoration:none;}
+}
+strong{font-weight:bold;}
+sup {vertical-align:super;font-size:8px;}
+
+/* ================== */
+/* === BUTTONS ====== */
+/* ================== */
+
+.main-btn{font-weight:800;color:$red;
+	&:hover{color:$black;
+		i.main-btn-icon{color:$black;border-color:$black;}
+	}
+}
+i.main-btn-icon{text-align:center;color:$red;border-radius:40px;border:2px solid $red;margin-right:10px;width:25px;height:25px;padding:4px 0 0 3px;transition:.2s ease-in-out;}
+
+/* ================== */
+/* === OTHER BASE === */
+/* ================== */
+
+*{box-sizing:border-box;}
+svg{fill:white;}
+.main-wrap{width:1100px;position:relative;margin:0 auto;max-width:90%;min-width:55%;}
+.clearfix{
+	&:before, &:after{content: "";display:table;} 
+	&:after{clear:both;}
+}
+.mobile-only{display:none;}
+.mobile-hide{display:block;}
+
+/* ================== */
+/* === KEYFRAMES === */
+/* ================== */
+
+@keyframes expand-loader {
+  0% { width: 0; }
+  // 50% { top: 10px; }
+  100% { width: 100%; }
+}

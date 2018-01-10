@@ -1,0 +1,147 @@
+/* ================== */
+/* === HEADER ======= */
+/* ================== */
+
+header{position:fixed;height:92px;width:100%;z-index:2;transition:all .2s ease-in-out;
+	.main-wrap{width:98%;position:relative;margin:0 auto;height:92px;transition:height .2s ease-in-out;}
+	a, nav{@include vert-align(50%,-50%);display:inline-block;color:$white;transition: all .3s ease-in-out;}
+	nav{float:right;
+		li{display:inline-block;height:25px;position:relative;
+			&:last-of-type a{padding-right:0;border-right:none;}
+			ul{display:none;position:absolute;width:100%;transition:all .2s ease-in-out;background-color:rgba($red,.9);background-size:cover;padding:25px 29px;top:25px;
+				li{display:block;margin-bottom:15px;height:auto;
+					&:last-of-type{margin-bottom:0px;}
+					a{border:none;padding:0;height:auto;top:inherit;@include transform(none);
+						&:hover{color:$black;}
+					}
+				}
+			}
+			&:hover ul{display:block;}
+		}
+		a{padding:5px 30px 0;font-size:16px;line-height:18px;height:25px;border-right:1px solid $gold;font-weight:800;position:relative;
+			&:hover{color:$gold;
+				&:after, &:before{width:calc(100% - 60px);left:0;}
+			}
+			i{margin-left:10px;}
+			&:after, &:before{content:"";position:absolute;bottom:0;right:0;left:0;margin:auto;width:0;height:3px;z-index:2;}
+			&:before{background-color:$gold;transition:all .25s cubic-bezier(.694,.048,.335,1) .15s;}
+			&:after{background-color:$red;transition:all .25s cubic-bezier(.694,.048,.335,1);}
+		}
+	}
+	.logo{transition:all .2s ease-in-out;
+		&:hover{opacity:.8;}
+		img{transition:all .1s ease-in-out;}
+	}
+	.mobile-trigger{display:none;float:right;font-size:30px;}
+	&.scrolled{background-color:rgba($black, 1);height:50px;border-bottom:1px solid $gold;z-index:202;
+		.main-wrap{height:50px;}
+		.logo img{width:34px;height:35px;}
+		nav li ul{top:50px;
+			li{height:auto;}
+		}
+		nav a:hover{color:$gold;}
+		nav li{height:50px;}
+	}
+}
+
+/* ================== */
+/* === FOOTER ======= */
+/* ================== */
+
+/* ===================== */
+/* === KEYFRAMES ======= */
+/* ===================== */
+
+@keyframes fade-in-one{
+	0%{opacity:0;}
+	100%{opacity:.4;}
+}
+
+@keyframes fade-in-two{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+@keyframes expand-loader {
+  0% { width: 0; }
+  // 50% { top: 10px; }
+  100% { width: 100%; }
+}
+
+%topLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.opening-wrapper {
+  width: 100%;
+  height: 100%;
+  @extend %topLeft;
+  transform-origin: 50% 50%;
+  animation: rotate 3.16s forwards linear;
+  overflow:hidden;
+}
+
+.bg-line,
+.dot {
+  @extend %topLeft;
+  height: 1px;
+  will-change: transform;
+}
+
+.bg-line {
+  width: 30px;
+  background: rgba($gold, .3);
+  animation: bgLine 2.8s infinite ease-in-out;
+}
+
+.dot {
+  width: 1px;
+  background: lighten(rgba($red, .5), 20%);
+  border-radius: 50%;
+  animation: dot 2.8s infinite ease-in-out;
+}
+
+$qx: 12;
+$qy: 9;
+$current: 0;
+
+// rows
+@for $r from 0 through $qy {
+  // columns
+  @for $c from 0 through $qx {
+    $rnd: random(100) / 100;
+    $current: $current + 1;
+    $top: calc((#{$r} * 100%) / #{$qy} + 50% / #{$qy});
+    $left: (#{$c} * 100%) / #{$qx} ;
+
+    $delay: $rnd * -3s;
+    
+    .bg-line:nth-child(#{$current}),
+    .dot:nth-child(#{$current}) {
+      top: $top;
+      left: calc(#{$left});
+      animation-delay: $delay;
+    }
+    .dot:nth-child(#{$current}) {
+      left: calc(#{$left} + #{$rnd * -40px + 41px});
+    }
+  }
+}
+
+@keyframes bgLine {
+  0%, 100% { opacity: 1; transform: translateX(.5rem) scaleX(.1); }
+  20% { opacity: .5; transform: translateX(.1rem) scaleX(.4); }
+  40% { opacity: 0; transform: translateX(1rem) scaleX(1.2); }
+  60% { opacity: .4; transform: translateX(-.5rem) scaleX(.5); }
+  80% { opacity: .1; transform: translateX(0) scaleX(.8); }
+}
+
+@keyframes dot {
+  0%, 100% { transform: translateX(.5rem); }
+  20% { transform: translateX(.1rem); }
+  40% { transform: translateX(1rem); }
+  60% { transform: translateX(-.5rem); }
+  80% { transform: translateX(0); }
+}
